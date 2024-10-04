@@ -69,8 +69,7 @@ project/
 │  
 ├── Dockerfile  
 ├── requirements.txt  
-├── main.py  
-├── http_myapp.tar  
+├── main.py   
 ├── Input.yml  
 ├── Logger.py  
 ├── ParseYamlInput.py  
@@ -136,9 +135,6 @@ The Dockerfile contains instructions for building a Docker image for this projec
 the base Python image, and dependencies, copies the necessary files, and runs the main.py file.
 For the project, running this file would be enough to execute the project. All the dependencies and modules are tested and will be handled by the Docker Image.
 
-● http_myapp.tar  
-This is a compressed tar file of the Docker Image that is being given for backup. If you have any difficulties building the docker image. Extract the image using the commands given below and try running the container.
-
 ### Running the Project Code
 
 The main reason for bringing the concept of Containers to this project is to provide ease of usability to the user.
@@ -203,6 +199,7 @@ The console output would be similar to this:
 <kbd><img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49"></kbd>
 
 If you have any difficulties building the docker image, please use the http_myapp.tar file to extract the docker image and use it locally using the following command:
+(Download the TAR file from here: https://1drv.ms/u/c/c2c844c981e71437/EXTBQXApit1CmB_J-W8dbgQBrDTzdoi9Oz46HBirVTQaJQ)
 
 > docker load < http_myapp.tar
 
