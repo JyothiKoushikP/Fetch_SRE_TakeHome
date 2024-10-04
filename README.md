@@ -192,19 +192,19 @@ You can check the images you have built using the following command:
 
 The console output would be similar to this:
 
-<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49">
+<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49" style="border: 1px solid black; border-radius: 4px;">
 
 
 **RUNNING THE DOCKER CONTAINER**  
 Now, the only step remaining is to run the docker container using the image you have just built. I offer a lot of flexibility.
 As discussed in the problem statement, the code requires a YAML file to parse and process the requests.
 
-By default the image has an Input.yml file (The mock input provided in the assignment document)
+By default, the image has an Input.yml file (The mock input provided in the assignment document)
 You can run that. This can be done using the following command:
 
 > docker run -it <IMAGE_NAME>
 
-**Remember: The Test Cycle runs infinitely every 15 seconds, to step please press Ctrl + C**
+**Remember: The Test Cycle runs infinitely every 15 seconds, to stop please press Ctrl + C**
 
 If you have your input and would like to test that, you can do it very easily using the following command:
 
@@ -218,7 +218,7 @@ This will volume mount your input to the container and you can run the program u
 
 After running the docker container, your output will be similar to the sample output shown below:
 
-<img width="852" alt="scr2" src="https://github.com/user-attachments/assets/651b8f71-aad4-4321-95f6-70e31c9d2cdd">
+<img width="852" alt="scr2" src="https://github.com/user-attachments/assets/651b8f71-aad4-4321-95f6-70e31c9d2cdd" style="border: 1px solid black; border-radius: 4px;">
 
 
 ### Project Code Properties
