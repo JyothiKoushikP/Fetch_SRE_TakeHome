@@ -81,7 +81,7 @@ project/
 ### Files Description
 
 ● Input.yaml  
-The Default YAML configuration file consists of the HttpRequests (URL, Method, headers and body) and other parameters.
+The Default YAML configuration file consists of the HttpRequests (URL, Method, headers, and body) and other parameters.
 This input is used to process the HTTPrequests and calculate the availability percentage.
 This file can be modified on execution time which is discussed below.
 
@@ -192,19 +192,19 @@ You can check the images you have built using the following command:
 
 The console output would be similar to this:
 
-![](<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/e2a3eac9-b04e-46a0-9d28-43237aecb10d">)
+<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49">
 
 
 **RUNNING THE DOCKER CONTAINER**  
 Now, the only step remaining is to run the docker container using the image you have just built. I offer a lot of flexibility.
 As discussed in the problem statement, the code requires a YAML file to parse and process the requests.
 
-By Default the image has a Input.yml file (The mock input provided in the assignment document)
+By default the image has an Input.yml file (The mock input provided in the assignment document)
 You can run that. This can be done using the following command:
 
 > docker run -it <IMAGE_NAME>
 
-**Remember: The Test Cycle runs infinitely every 15 seconds, in order to step please press Ctrl + C**
+**Remember: The Test Cycle runs infinitely every 15 seconds, to step please press Ctrl + C**
 
 If you have your input and would like to test that, you can do it very easily using the following command:
 
@@ -212,27 +212,28 @@ If you have your input and would like to test that, you can do it very easily us
 
 This will volume mount your input to the container and you can run the program using any custom input and the code will process it automatically.
 
-**Note: All the execution process has been recorded in a demonstration video that I have attached with this repository, If you have any difficulties, please watch that video and it will be helpful.**
+**Note: All the execution process has been recorded in a demonstration video that I have attached with this repository, If you have any difficulties, please watch that video as it will be helpful.**
 
 ### Sample Output
 
-After running the docker container,your output will be similar to the sample output shown below:
+After running the docker container, your output will be similar to the sample output shown below:
 
-![](/Users/jyothikoushikpaladugu/Desktop/scr2.png)
+<img width="852" alt="scr2" src="https://github.com/user-attachments/assets/651b8f71-aad4-4321-95f6-70e31c9d2cdd">
+
 
 ### Project Code Properties
 
 ● Re-usability  
-The project code builds a docker Image which is customizable. The Image could be run any number of times promoting easiness, re-usability.
+The project code builds a customizable docker Image. The Image could be run any number of times promoting easiness, and re-usability.
 
 ● Security  
 The code promotes security in many ways:
-- Private Attributes: The main HttpRequest class is private which means no other module can access it directly and can access it using only getter / setter functions.
-- No Hardcoded Credentials: There is no hard coding of input, credentials and other sensitive data. Everything is handled dynamically using environment variables.
+- Private Attributes: The main HttpRequest class is private which means no other module can access it directly and can access it using only getter/setter functions.
+- No Hardcoded Credentials: There is no hard coding of input, credentials, and other sensitive data. Everything is handled dynamically using environment variables.
 - Modularity: Modularity of the code and Single Responsibility Principle ensures that no modules clash with each other functionalities.
 
 ● Portability  
-The Docker Image you have built could be shared to other people easily using the tar file format which promotes portability.
+The Docker Image you have built could be shared with other people easily using the tar file format which promotes portability.
 
 ● Error Handling
 All case scenarios have been analyzed and exceptions are handled to make sure that the code doesn't break on execution.
@@ -242,7 +243,7 @@ All case scenarios have been analyzed and exceptions are handled to make sure th
 
 ● I have assumed that whoever runs this code has minimal knowledge of the programming language I have used.   
 Docker Containers is the primary approach used so that anyone can just install Docker, 
-download the code and run it by building the image.
+download the code, and run it by building the image.
 
 ● I have assumed that none of the requests are dependent on other preceding requests and all are completely independent. 
 
