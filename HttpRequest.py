@@ -15,12 +15,12 @@ class HttpRequest:
         self.set_body(body)
 
     def set_name(self, name):
-        if name is None:
+        if name is None or len(name) == 0:
             raise ValueError("The 'name' cannot be None.")
         self.__name = name
 
     def set_url(self, url):
-        if url is None:
+        if url is None or len(url) == 0:
             raise ValueError("The 'url' cannot be None.")
         self.__url = url
 

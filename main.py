@@ -46,13 +46,12 @@ if __name__ == "__main__":
         tracker = AvailabilityTracker()
         try:
             # Executing Continuous Test Cycles and Logging for every Test Cycle (Handling Exceptions)
-            t_no, time_p = 1, 0
+            time_p = 0
             while True:
-                print(f"Test cycle #{t_no} begins at time = {time_p} seconds:")
+                print(f"Test cycle #{(time_p//15) + 1} begins at time = {time_p} seconds:")
                 check_http_requests(http_requests, tracker)
                 time.sleep(15)
                 log_final_availability(tracker)
-                t_no += 1
                 time_p += 15
         except Exception as e:
             # Exception Handling
