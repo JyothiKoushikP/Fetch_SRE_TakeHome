@@ -76,6 +76,7 @@ project/
 ├── HttpRequest.py  
 ├── HttpChecker.py  
 ├── AvailabilityTracker.py  
+├── tests/ -> 2 test Files  
 └── README.md  
 
 ### Files Description
@@ -121,6 +122,9 @@ initializing logging and using other modules like HttpRequest, HttpChecker, Avai
 ● README.md  
 The README file provides documentation for the project. It explains how to set up and run the application, 
 as well as providing an overview of what each file/part of the project does.
+
+● tests/  
+This folder consists of 2 test files written to test "parseYamlInput" and "HttpRequests" objects parsing. All valid and invalid edge cases have been written using pytest to make sure that the code is adhering and functioning to the requirements.
 
 ● Requirements.txt  
 The file consists of all the python dependencies required to run the project. This file is automatically taken when 
@@ -236,6 +240,10 @@ The Docker Image you have built could be shared with other people easily using t
 ● Error Handling
 All case scenarios have been analyzed and exceptions are handled to make sure that the code doesn't break on execution.
 (Ex: Invalid Input (No Name/URL), Invalid File Input, Invalid Requests etc.)
+
+● Testing
+It is important to test all scenarios before we deploy our code. The repository also consists of the test folder containing various test cases written and validated using pytest and uniittest.
+
 
 ### Assumptions Taken for the Assignment:
 
