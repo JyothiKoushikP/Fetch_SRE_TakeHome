@@ -70,6 +70,7 @@ project/
 ├── Dockerfile  
 ├── requirements.txt  
 ├── main.py  
+├── http_myapp.tar  
 ├── Input.yml  
 ├── Logger.py  
 ├── ParseYamlInput.py  
@@ -135,9 +136,12 @@ The Dockerfile contains instructions for building a Docker image for this projec
 the base Python image, and dependencies, copies the necessary files, and runs the main.py file.
 For the project, running this file would be enough to execute the project. All the dependencies and modules are tested and will be handled by the Docker Image.
 
+● http_myapp.tar  
+This is a compressed tar file of the Docker Image that is being given for backup. If you have any difficulties building the docker image. Extract the image using the commands given below and try running the container.
+
 ### Running the Project Code
 
-The main reason of bringing the concept of Containers to this project is to provide ease of usability to the user.
+The main reason for bringing the concept of Containers to this project is to provide ease of usability to the user.
 Different users use different environments, operating systems, and configurations and it is extremely difficult to set up all the
 dependencies and project code.
 
@@ -180,7 +184,7 @@ I have also included a publicly accessible URL that contains the project code th
 After installing Docker Download the source code on your local system and extract it.
 The Folder should look something like this:
 
-<kbd><img width="331" alt="Screenshot 2024-10-04 at 3 02 10 PM" src="https://github.com/user-attachments/assets/8bb9add8-23f9-49bb-a69f-f4f36e0e24cd"></kbd>
+<kbd><img width="302" alt="Screenshot 2024-10-04 at 4 08 29 PM" src="https://github.com/user-attachments/assets/9ace8cfd-1375-4006-ae5c-7d8f8924ba28"></kbd>
 
 **BUILDING THE DOCKER IMAGE**  
 Open your terminal/ PowerShell / Git Bash console and navigate to the project code directory in your system
@@ -197,6 +201,10 @@ You can check the images you have built using the following command:
 The console output would be similar to this:
 
 <kbd><img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49"></kbd>
+
+If you have any difficulties building the docker image, please use the http_myapp.tar file to extract the docker image and use it locally using the following command:
+
+> docker load < http_myapp.tar
 
 **RUNNING THE DOCKER CONTAINER**  
 Now, the only step remaining is to run the docker container using the image you have just built. I offer a lot of flexibility.
@@ -253,8 +261,7 @@ download the code, and run it by building the image.
 
 ● I have assumed that none of the requests are dependent on other preceding requests and all are completely independent. 
 
-
-
+##Video Link: https://drive.google.com/file/d/1lQNUqF28VB9s43GIK28YMm3_SgsdyXxl/view?usp=sharing##
 
 
 
