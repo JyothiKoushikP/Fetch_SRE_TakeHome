@@ -192,8 +192,7 @@ You can check the images you have built using the following command:
 
 The console output would be similar to this:
 
-<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49" style="border: 1px solid black; border-radius: 4px;">
-
+<kbd><img width="882" alt="scr1" src="https://github.com/user-attachments/assets/7b7911df-a3b1-4a7b-89b0-d7e3bb048b49"></kbd>
 
 **RUNNING THE DOCKER CONTAINER**  
 Now, the only step remaining is to run the docker container using the image you have just built. I offer a lot of flexibility.
@@ -218,8 +217,7 @@ This will volume mount your input to the container and you can run the program u
 
 After running the docker container, your output will be similar to the sample output shown below:
 
-<img width="852" alt="scr2" src="https://github.com/user-attachments/assets/651b8f71-aad4-4321-95f6-70e31c9d2cdd" style="border: 1px solid black; border-radius: 4px;">
-
+<kbd><img width="852" alt="scr2" src="https://github.com/user-attachments/assets/651b8f71-aad4-4321-95f6-70e31c9d2cdd"></kbd>
 
 ### Project Code Properties
 
