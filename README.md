@@ -81,42 +81,42 @@ project/
 ### Files Description
 
 ● Input.yaml  
-The Default YAML configuration file consisting of the HttpRequests (URL, Method, headers and body) and other parameters.
-This input is used to process the HttpRequests and calculate the availability percentage.
+The Default YAML configuration file consists of the HttpRequests (URL, Method, headers and body) and other parameters.
+This input is used to process the HTTPrequests and calculate the availability percentage.
 This file can be modified on execution time which is discussed below.
 
 ● HttpRequest.py  
 This module defines a class "HttpRequest" that represents an HTTP Request. It encapsulates all the necessary 
-attributes like name, URL, method, headers and body and provides a detailed structure.
+attributes like name, URL, method, headers, and body and provides a detailed structure.
 The class also contains setter and getter methods to promote validation and security.
 
 ● ParseYamlInput.py  
-This module is responsible for reading the Input.yml file, parsing it and converts it into Python Objects. 
+This module is responsible for reading the Input.yml file, parsing it, and converting it into Python Objects. 
 It reads the HTTP Request Configurations and transforms them into HttpRequest Objects used for making the request 
 and calculating the availability.
 
 ● HttpChecker.py  
-This module is responsible for sending the actual Http Requests. It uses the HttpRequest objects 
+This module is responsible for sending the actual HTTP requests. It uses the HttpRequest objects 
 created by the ParseYamlInput and performs the request, returning the status of each service.  
 - Key Functions:  
 -- send_request(http_request): Sends an HTTP request based on the given HttpRequest object and 
 returns the response or error message.  
--- check_availability(response): Evaluates the response to determine the service's availability.
+-- check_availability(response): Evaluate the response to determine the service's availability.
 
 ● AvailabilityTracker.py  
-This module is responsible to keep track of the availability status of various services. It stores and logs
-whether the services are available or not, and it can provide summaries, such as uptime or downtime statistics.
+This module is responsible for tracking the availability status of various services. It stores and logs
+whether the services are available or not, it can provide summaries, such as uptime or downtime statistics.
 - Key Functions:  
   -- track_availability(http_request, status): Records the availability status of a specific request.  
   -- generate_report(): Outputs a summary report of the availability status for all services.
 
 ● Logger.py  
-This module is responsible for logging important events during the execution of the program. It can be used to track the status of Http Requests,
-any exceptions and the final results of availability checks. It helps in debugging and monitoring the program's performance.
+This module is responsible for logging important events during the execution of the program. It can be used to track the status of HTTP Requests,
+any exceptions, and the final results of availability checks. It helps in debugging and monitoring the program's performance.
 
 ● main.py  
 The main entry point for the project. It orchestrates the entire process, including reading input configurations from Input.yml, 
-initializing logging and using other modules like HttpRequest, HttpChecker, AvailabilityTracker and ParseYamlInput to perform all required tasks.
+initializing logging and using other modules like HttpRequest, HttpChecker, AvailabilityTracker, and ParseYamlInput to perform all required tasks.
 
 ● README.md  
 The README file provides documentation for the project. It explains how to set up and run the application, 
@@ -192,7 +192,8 @@ You can check the images you have built using the following command:
 
 The console output would be similar to this:
 
-![](/Users/jyothikoushikpaladugu/Desktop/scr1.png)
+![](<img width="882" alt="scr1" src="https://github.com/user-attachments/assets/e2a3eac9-b04e-46a0-9d28-43237aecb10d">)
+
 
 **RUNNING THE DOCKER CONTAINER**  
 Now, the only step remaining is to run the docker container using the image you have just built. I offer a lot of flexibility.
