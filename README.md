@@ -47,10 +47,10 @@ Logging the results
 Each time the program finishes testing all the endpoints in the configuration file, log the
 availability percentage of each URL domain over the lifetime of the program to the console.
 Availability percentage is defined as:
-100 * (number of HTTP requests that had an outcome of UP / number of
+100 * (number of HTTP requests that had an outcome of UP/number of
 HTTP requests)
 
-User presses CTRL+C and the program exits.
+The user presses CTRL+C and the program exits.
 Note that when logging the availability percentage for each domain, the program should round
 floating-point availability percentages to the nearest whole percentage.
 
@@ -127,22 +127,22 @@ as well as providing an overview of what each file/part of the project does.
 This folder consists of 2 test files written to test "parseYamlInput" and "HttpRequests" objects parsing. All valid and invalid edge cases have been written using pytest to make sure that the code is adhering and functioning to the requirements.
 
 ● Requirements.txt  
-The file consists of all the python dependencies required to run the project. This file is automatically taken when 
+The file consists of all the Python dependencies required to run the project. This file is automatically taken when 
 building the Docker image or setting up the project locally. "pip" is the package manager used to install the dependencies.
 
 ● Dockerfile  
 The Dockerfile contains instructions for building a Docker image for this project. It defines 
-the base Python image, dependencies, copy the necessary files and runs the main.py file.
-For the project, running this file would be enough to execute the project. All the dependencies, modules are tested and will be handled by the Docker Image.
+the base Python image, and dependencies, copies the necessary files, and runs the main.py file.
+For the project, running this file would be enough to execute the project. All the dependencies and modules are tested and will be handled by the Docker Image.
 
 ### Running the Project Code
 
-The main reason of bringing the concept of Containers in this project is to provide ease of usability to the user.
-Different users use different environments, operating systems, configurations and it is extremely difficult to setup all the
+The main reason of bringing the concept of Containers to this project is to provide ease of usability to the user.
+Different users use different environments, operating systems, and configurations and it is extremely difficult to set up all the
 dependencies and project code.
 
-With only one tool, this code can be wrapped with all the dependencies, packages and can be executed from any system
-irrespective of diverse conditions. We are using Docker for this use-case which is free, easy to use and efficient.
+With only one tool, this code can be wrapped with all the dependencies, and packages and can be executed from any system
+irrespective of diverse conditions. We are using Docker for this use-case which is free, easy to use, and efficient.
 
 ● Image  
 A Docker image is a lightweight, standalone, and executable package that contains 
@@ -157,7 +157,7 @@ Containers are portable, scalable, and lightweight.
 ● Docker  
 Docker is an open-source platform that automates the deployment, scaling, 
 and management of applications using containerization. It provides public/private images which you can use to build your own image. 
-It provides OS-Level Virtualization.
+It provides OS-level virtualization.
 
 **INSTALLING DOCKER**  
 Installing and Using Docker is very simple:
@@ -172,19 +172,19 @@ Now you have the Docker Desktop / CLI Setup, the next step would be downloading 
 There are 2 ways to do it. 
 
 ● Using GitHub / Git  
-If you have the knowledge of using GitHub / Git, you can clone the repository to your local system and run the project at your comfort and ease.
+If you know how to use GitHub / Git, you can clone the repository to your local system and run the project at your comfort and ease.
 
 ● Public Code URL   
-I have also included a publicly-accessible URL that contains the project code that you can just download, extract and use it in your local system.
+I have also included a publicly accessible URL that contains the project code that you can just download, extract, and use in your local system.
 
-After installing Docker and Downloading the source code on your local system and extracting it.
+After installing Docker Download the source code on your local system and extract it.
 The Folder should look something like this:
 
-<Image
+<kbd><img width="331" alt="Screenshot 2024-10-04 at 3 02 10 PM" src="https://github.com/user-attachments/assets/8bb9add8-23f9-49bb-a69f-f4f36e0e24cd"></kbd>
 
 **BUILDING THE DOCKER IMAGE**  
 Open your terminal/ PowerShell / Git Bash console and navigate to the project code directory in your system
-(Use cd linux command ). This Step is extremely crucial.
+(Use the cd Linux command ). This Step is extremely crucial.
 
 The first step is to build the docker image (I have also included the tar file of the docker image in case you want to use it)
 
@@ -242,7 +242,7 @@ All case scenarios have been analyzed and exceptions are handled to make sure th
 (Ex: Invalid Input (No Name/URL), Invalid File Input, Invalid Requests etc.)
 
 ● Testing
-It is important to test all scenarios before we deploy our code. The repository also consists of the test folder containing various test cases written and validated using pytest and uniittest.
+It is important to test all scenarios before we deploy our code. The repository also consists of the test folder containing various test cases written and validated using pytest and unfittest.
 
 
 ### Assumptions Taken for the Assignment:
